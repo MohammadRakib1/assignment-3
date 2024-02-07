@@ -39,29 +39,18 @@
 <body>
     <header class="container mx-auto">
         <!-- Header -->
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a><span class="text-[#FF4240] font-bold">Home</span></a></li>
-                            <li><a>About</a></li>
-                            <li><a>Pages</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
-                        </ul>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                    <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-[#131318]">Hockey’s</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a><span class="text-[#FF4240] font-bold">Home</span></a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
@@ -69,17 +58,91 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end">
-                    <svg class="w-4 mx-6 invisible lg:visible text-[#89898B]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                    </svg>
-                    <a class="btn bg-[#FF4240] text-white">
-                        Get Ticket</a>
+                <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold text-[#131318]">Hockey’s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a><span class="text-[#FF4240] font-bold">Home</span></a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <svg class="w-4 mx-6 invisible lg:visible text-[#89898B]" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512">
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
+                <a class="btn bg-[#FF4240] text-white">
+                    Get Ticket</a>
+            </div>
+        </div>
+        <!-- Header Banner -->
+        <div class="my-4 mx-4 lg:my-16">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full h-[300px] lg:h-[550px]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle border-none text-white bg-black">❮</a>
+                        <a href="#slide2" class="btn btn-circle border-none text-white bg-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full h-[300px] lg:h-[550px]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle border-none text-white bg-black">❮</a>
+                        <a href="#slide1" class="btn btn-circle border-none text-white bg-black">❯</a>
+                    </div>
                 </div>
             </div>
-            
+            <div class="absolute lg:w-[570px] rounded-xl lg:-mt-48 lg:ml-[600px] bg-[#131318]">
+                <div class="relative p-8">
+                    <h3 class="text-lg lg:text-2xl text-white font-extrabold lg:mb-4">Meet all the heroes from the field
+                    </h3>
+                    <p class="text-white lg:text-center ">There are 11 players on a team made up of a goalkeeper,
+                        defenders, midfielders
+                        and forwards.</p>
+                </div>
+            </div>
+        </div>
     </header>
+    <!-- Main -->
+    <main class="container mx-auto mt-56 lg:mt-24">
+        <!-- professional hockey club -->
+        <section>
+            <hr class="mx-6">
+            <h2 class="text-2xl mt-4 lg:text-4xl mb-6 font-extrabold text-center">Professional Hockeys Club</h2>
+            <p class="text-center mx-4 lg:mb-4">Hockey is a fun game that two teams play on a field or ice. Each
+                team has sticks to hit a small ball or puck. <br> The goal is to get the ball or puck into the other
+                team’s net.</p>
+            <hr class="mx-6 mb-6">
+            <div class="flex mx-4 flex-col lg:flex-row gap-6 my-4">
+                <div class="text-center">
+                    <div class="radial-progress text-red-400" style="--value:87;" role="progressbar">87%</div>
+                    <h3 class="text-lg my-4 font-semibold">Player Facility</h3>
+                    <p>Zone designed for development of individual skills such as skating.</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-emerald-400" style="--value:95;" role="progressbar">95%</div>
+                    <h3 class="text-lg my-4 font-semibold">Experienced Coach</h3>
+                    <p>Zone designed for development of individual skills such as skating.</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-yellow-400" style="--value:90;" role="progressbar">90%</div>
+                    <h3 class="text-lg my-4 font-semibold">Senior Player</h3>
+                    <p>Zone designed for development of individual skills such as skating.</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-blue-400" style="--value:80;" role="progressbar">80%</div>
+                    <h3 class="text-lg my-4 font-semibold">Training Ground</h3>
+                    <p>Zone designed for development of individual skills such as skating.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>
